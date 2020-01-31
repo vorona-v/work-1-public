@@ -163,6 +163,111 @@
     color: #96a6a7;
     text-transform: uppercase;
     margin: 0 25px 0 0;
-
+    cursor: pointer;
+    @include transition(all 0.25s);
+    &.active {
+      color: #e94e38;
+    }
+    @include min-medium {
+      &:hover {
+        color: #e94e38;
+      }
+    }
+  }
+}
+.flat-posts-wrap {
+  .flat-post-search-filters {
+    @include flexbox;
+    flex-direction: row;
+    align-items: center;
+  }
+  .flat-search-sorting-wrap {
+    margin: 0 10px 0 0;
+    max-width: 115px;
+    height: 35px;
+    border-color: #96a6a7;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .flat-dropdown {
+    padding: 8px 20px 10px;
+    span {
+      color: #96a6a7;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .fas {
+      color: #96a6a7;
+    }
+  }
+}
+.flat-map-wrap {
+  @include flexbox;
+  align-items: center;
+  max-width: 115px;
+  width: 100%;
+  height: 35px;
+}
+.flat-show-map-button {
+  width: 115px;
+  border: 1px solid #96a6a7;
+  border-radius: 25px;
+  padding: 7px 14px;
+  @include flexbox;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  @include transition(all 0.25s);
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #96a6a7;
+    text-transform: uppercase;
+    @include transition(all 0.25s);
+  }
+  .fas {
+    color: #96a6a7;
+    @include transition(all 0.25s);
+  }
+  @include min-medium{
+    &:hover {
+      background: #1baf5d;
+      border-color: #1baf5d;
+      span {
+        color: #ffffff;
+      }
+      .fas {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.flat-post-category-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #96a6a7;
+  text-transform: uppercase;
+}
+.flat-post-category-filters {
+  @include flexbox;
+  align-items: center;
+}
+.flat-post-category-wrap {
+  @include flexbox;
+  align-items: center;
+}
+.flat-post-category-filter {
+  margin: 0 0 0 10px;
+  width: 50px;
+  height: 50px;
+  @include border-radius(50%);
+  @include flexbox-center;
+  background: #96a6a7;
+  cursor: pointer;
+  @include transition(all 0.25s);
+  .fas {
+    color: #ffffff;
+    font-size: 24px;
   }
 }
